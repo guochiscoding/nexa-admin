@@ -1,0 +1,82 @@
+/* Modal */
+.app-modal.ant-modal {
+  max-width: min(960px, calc(100vw - 32px)) !important;
+}
+
+.app-modal.ant-modal .ant-modal-content {
+  background-color: var(--bg-color-container);
+  max-height: min(800px, calc(100vh - 48px));
+  overflow: hidden;
+  padding: 0;
+  border-radius: 6px;
+}
+
+.app-modal.ant-modal .ant-modal-body {
+  padding: 0;
+}
+
+.app-modal-shell {
+  display: flex;
+  max-height: min(800px, calc(100vh - 48px));
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px 15px;
+  border-bottom: 1px solid var(--component-stroke);
+}
+
+.app-modal-title {
+  min-width: 0;
+  margin: 0;
+  color: var(--Font-Black-Gy1);
+  font-size: var(--font-size-titleMedium);
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.app-modal-close {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: var(--Font-Black-Gy1);
+  font-size:var(--font-size-titleLarge);
+  line-height: var(--font-size-titleLarge);
+}
+
+.app-modal-close .anticon,
+.app-modal-close .iconfont {
+  width: 20px;
+  height: 20px;
+  font-size: var(--font-size-titleLarge);
+  line-height: var(--font-size-titleLarge);
+}
+
+.app-modal-body {
+  color: var(--Font-Black-Gy1);
+  min-height: 0;
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 24px 0;
+}
+
+.app-modal-footer {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 24px 24px 20px;
+}

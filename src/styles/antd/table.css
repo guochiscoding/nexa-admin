@@ -1,0 +1,249 @@
+/* table */
+.ant-table-wrapper .ant-table {
+  @apply !bg-container !text-font-black-gy1;
+}
+
+.ant-table-wrapper .ant-table table {
+  table-layout: fixed !important;
+}
+
+.ant-table-wrapper.ant-table-wrapper .ant-table,
+.ant-table-wrapper.ant-table-wrapper .ant-table-container,
+.ant-table-wrapper.ant-table-wrapper .ant-table-container table {
+  border-radius: 4px !important;
+  border-start-start-radius: 4px !important;
+  border-start-end-radius: 4px !important;
+  border-end-start-radius: 4px !important;
+  border-end-end-radius: 4px !important;
+}
+
+.ant-table-wrapper .ant-table-container {
+  @apply !border !border-component-stroke;
+  background-color: var(--bg-color-container) !important;
+}
+
+.ant-table-wrapper .ant-table-thead > tr > th {
+  @apply !align-middle !border-b !border-component-stroke !border-t-0 !border-l-0 !border-r-0 !bg-color-page !px-4 !py-2 !text-left !text-body-medium !font-medium !text-font-black-gy1 !min-w-0;
+}
+
+.ant-table-wrapper .ant-table-container table > thead > tr:first-child > *:first-child {
+  border-start-start-radius: 4px !important;
+}
+
+.ant-table-wrapper .ant-table-container table > thead > tr:first-child > *:last-child {
+  border-start-end-radius: 4px !important;
+}
+
+.ant-table-wrapper .ant-table-thead > tr:first-child > th.group-header-cell {
+  @apply !border-b-2 !text-center;
+}
+
+.ant-table-wrapper .ant-table-thead > tr:first-child > th.group-accent-default {
+  @apply !border-brand-black;
+}
+
+.ant-table-wrapper .ant-table-thead > tr:first-child > th.group-accent-success {
+  @apply !border-success-color;
+}
+
+.ant-table-wrapper .ant-table-thead > tr:first-child > th.group-accent-none {
+  @apply !border-purple-color;
+}
+
+.ant-table-wrapper .ant-table-thead > tr:first-child > th.group-header-cell.ant-table-cell-fix-left,
+.ant-table-wrapper .ant-table-thead > tr:first-child > th.group-header-cell.ant-table-cell-fix-right {
+  @apply !static !left-auto !right-auto;
+}
+
+
+.ant-table-wrapper .ant-table-tbody > tr:not(.ant-table-measure-row) > td {
+  @apply !align-middle !border-b !border-component-stroke !border-t-0 !border-l-0 !border-r-0 !bg-container !px-4 !py-2 !text-left !text-body-medium !text-font-black-gy1 !min-w-0;
+  text-align: left !important;
+}
+
+.ant-table-wrapper .ant-table-placeholder > td,
+.ant-table-wrapper .ant-table-expanded-row > td {
+  background-color: var(--bg-color-container) !important;
+  color: var(--Font-Black-Gy2) !important;
+}
+
+.ant-table-wrapper .ant-table-column-sorters:hover,
+.ant-table-wrapper .ant-table-filter-trigger:hover {
+  background-color: var(--bg-color-container-hover) !important;
+  color: var(--Font-Black-Gy1) !important;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-row-selected > td {
+  background-color: var(--brand-blue-light) !important;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr:not(.ant-table-measure-row) > td * {
+  text-align: left;
+}
+
+.ant-table-wrapper .ant-table-thead > tr > th.drag-handle-header-cell,
+.ant-table-wrapper .ant-table-thead > tr > th.drag-handle-header-cell * {
+  text-align: center !important;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr:not(.ant-table-measure-row) > td.drag-handle-cell,
+.ant-table-wrapper .ant-table-tbody > tr:not(.ant-table-measure-row) > td.drag-handle-cell * {
+  text-align: center !important;
+}
+
+.ant-table-wrapper .ant-table-cell-ellipsis {
+  @apply !overflow-hidden !text-ellipsis !whitespace-nowrap;
+}
+
+.ant-table-wrapper .ant-table-cell-ellipsis.ant-table-cell-fix-left-last,
+.ant-table-wrapper .ant-table-cell-ellipsis.ant-table-cell-fix-right-first {
+  @apply !overflow-visible;
+}
+
+.ant-table-wrapper .ant-table-cell-ellipsis.ant-table-cell-fix-left-last .ant-table-cell-content,
+.ant-table-wrapper .ant-table-cell-ellipsis.ant-table-cell-fix-right-first .ant-table-cell-content {
+  @apply !block !overflow-hidden !text-ellipsis;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr:not(.ant-table-measure-row):hover > td {
+  @apply !bg-container-hover ;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-measure-row,
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-measure-row > td {
+  @apply !h-0 !overflow-hidden !border-0 !bg-transparent !p-0 !leading-[20px];
+}
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-measure-row > td > div {
+  @apply !h-0 !overflow-hidden;
+}
+
+.ant-table-wrapper .ant-table-cell-fix-left,
+.ant-table-wrapper .ant-table-cell-fix-right {
+  @apply !bg-color-page;
+}
+
+.ant-table-wrapper .ant-table-column-sorter,
+.ant-table-wrapper .ant-table-filter-trigger {
+  @apply !text-font-black-gy3;
+}
+
+.ant-table-wrapper .ant-table-header-column {
+  @apply !min-w-0 !overflow-hidden;
+}
+
+/* Checkbox brand black override */
+.ant-checkbox-checked .ant-checkbox-inner,
+.ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner,
+.ant-table-wrapper .ant-checkbox-checked .ant-checkbox-inner {
+  @apply !bg-brand-black !border-brand-black;
+  background-color: var(--brand-black) !important;
+  border-color: var(--brand-black) !important;
+}
+
+.ant-checkbox .ant-checkbox-inner {
+  background-color: var(--bg-color-container) !important;
+  border-color: var(--component-border) !important;
+}
+
+.ant-checkbox-wrapper {
+  color: var(--Font-Black-Gy1) !important;
+}
+
+.ant-checkbox-disabled .ant-checkbox-inner,
+.ant-checkbox-disabled:hover .ant-checkbox-inner {
+  background-color: var(--bg-color-page) !important;
+  border-color: var(--component-border) !important;
+}
+
+.ant-checkbox-disabled + span {
+  color: var(--Font-Black-Gy4) !important;
+}
+
+/* Checkbox indeterminate (半选) */
+.ant-checkbox-indeterminate .ant-checkbox-inner,
+.ant-checkbox-indeterminate:not(.ant-checkbox-disabled) .ant-checkbox-inner,
+.ant-table-wrapper .ant-checkbox-indeterminate .ant-checkbox-inner {
+  @apply !bg-color-container !border-component-border;
+  background-color: var(--bg-color-container) !important;
+  border-color: var(--component-border) !important;
+}
+
+.ant-checkbox-indeterminate .ant-checkbox-inner::after,
+.ant-table-wrapper .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+  @apply !bg-brand-black;
+  background-color: var(--brand-black) !important;
+  width: 8px !important;
+  height: 8px !important;
+  border: 0 !important;
+  border-width: 0 !important;
+  border-radius: 1px !important;
+  top: 50% !important;
+  left: 50% !important;
+  inset-inline-start: 50% !important;
+  transform: translate(-50%, -50%) scale(1) !important;
+  opacity: 1 !important;
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner,
+.ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner,
+.ant-table-wrapper .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner,
+.ant-table-wrapper .ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+  @apply !border-brand-black;
+  border-color: var(--brand-black) !important;
+}
+
+.ant-checkbox-wrapper.ant-checkbox-wrapper-disabled:hover .ant-checkbox-inner,
+.ant-checkbox.ant-checkbox-disabled:hover .ant-checkbox-inner,
+.ant-table-wrapper .ant-checkbox-wrapper.ant-checkbox-wrapper-disabled:hover .ant-checkbox-inner,
+.ant-table-wrapper .ant-checkbox.ant-checkbox-disabled:hover .ant-checkbox-inner {
+  @apply !border-component-border;
+  border-color: var(--component-border) !important;
+}
+
+.ant-table-wrapper .ant-table-resize-handle {
+  @apply !w-3 !cursor-col-resize !bg-transparent !border-0;
+}
+
+.ant-table-wrapper .ant-table-resize-handle .ant-table-resize-handle-line,
+.ant-table-wrapper .ant-table-resize-handle:hover .ant-table-resize-handle-line,
+.ant-table-wrapper .ant-table-resize-handle.dragging .ant-table-resize-handle-line {
+  @apply !bg-transparent;
+  opacity: 0 !important;
+}
+
+.ant-table-wrapper .ant-table-thead >tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before, .ant-table-wrapper .ant-table-thead >tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before{
+  @apply !h-4 !bg-component-border !p-0 !m-0 ml-0.5;
+}
+
+.ant-table-wrapper .ant-table-thead >tr>th:not(.ant-table-cell-fix-right):has(+ th.ant-table-cell-fix-right-first)::before {
+  content: none !important;
+}
+
+.ant-table-wrapper .ant-table-ping-left .ant-table-thead >tr>th.ant-table-cell-fix-left-last:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  display: none !important;
+  content: none !important;
+}
+
+.ant-table-wrapper .ant-table-thead >tr>th.ant-table-selection-column:not(:last-child)::before {
+  @apply !absolute !top-1/2 !right-0 !h-4 !w-px !-translate-y-1/2 !bg-component-border !p-0 !m-0;
+  content: "";
+}
+
+.ant-table-wrapper .ant-table-thead >tr>th.ant-table-cell-fix-right-first::before {
+  @apply !absolute !top-1/2 !left-0 !right-auto !h-4 !w-px !bg-component-border !p-0 !m-0;
+  content: "";
+  transform: translateY(-50%) !important;
+}
+
+.ant-table-wrapper .ant-table-ping-right .ant-table-thead >tr>th.ant-table-cell-fix-right-first::before {
+  @apply !hidden !bg-transparent;
+  content: "" !important;
+}
+
+.ant-table-wrapper .ant-table-thead >tr>th.ant-table-cell-fix-right-first + th.ant-table-cell-fix-right {
+  background-image: linear-gradient(var(--component-border), var(--component-border)) !important;
+  background-position: left center !important;
+  background-repeat: no-repeat !important;
+  background-size: 1px 16px !important;
+}

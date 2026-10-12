@@ -1,0 +1,54 @@
+:root {
+  --bg-color-page: var(--Gray1);
+  --bg-color-container: var(--White1);
+  --bg-color-secondarycontainer: var(--Gray2);
+  --bg-color-component: var(--Gray1);
+  --component-stroke: var(--Gray3);
+  --component-border: var(--Gray4);
+  --bg-color-container-hover: var(--Gray5);
+  --bg-color-container-active: var(--Gray3);
+
+  --Font-Black-Gy1: var(--Font-Gy1);
+  --Font-Black-Gy2: var(--Font-Gy2);
+  --Font-Black-Gy3: var(--Font-Gy3);
+  --Font-Black-Gy4: var(--Font-Gy4);
+  --Font-White-Gy1: var(--Font-Wh1);
+  --Font-White-Gy1-Anti: var(--Font-Wh1-Anti);
+  --Font-White-Gy2: var(--Font-Wh2);
+  --Font-White-Gy3: var(--Font-Wh3);
+  --Font-White-Gy4: var(--Font-Wh4);
+  --Font-blue-brand: var(--Brand-bule3);
+  --Font-blue-link: var(--Brand-bule3);
+
+  --brand-blue: var(--Brand-bule3);
+  --brand-blue-hover: var(--Brand-bule4);
+  --brand-blue-active: var(--Brand-bule5);
+  --brand-blue-disabled: var(--Brand-bule2);
+  --brand-blue-light: var(--Brand-bule1);
+  --brand-black: var(--Brand-black3);
+  --brand-black-hover: var(--Brand-black4);
+  --brand-black-active: var(--Brand-black4);
+  --brand-black-disabled: var(--Brand-black2);
+  --brand-black-light: var(--Brand-black1);
+  --error-color: var(--Error3);
+  --error-hover: var(--Error4);
+  --error-active: var(--Error5);
+  --error-disabled: var(--Error2);
+  --error-light: var(--Error1);
+  --warning-color: var(--Warning5);
+  --warning-light: var(--Warning1);
+  --warning-border: var(--Warning3);
+  --success-color: var(--Success5);
+  --success-light: var(--Success1);
+  --success-border: var(--Success3);
+  --purple-color: var(--Purple2);
+  --purple-light: var(--Purple1);
+  --but-white-color: var(--White1);
+  --but-white-hover: var(--Wh6);
+  --but-white-active: var(--Wh5);
+  --but-white-disabled: var(--Font-Wh4);
+  --white-linear-gradient: var(--Wh7);
+  --white-linear-gradient-left: linear-gradient(90deg, var(--Font-White-Gy1) 0.2%, var(--Wh7) 100.2%);
+  --white-linear-gradient-right: linear-gradient(90deg, var(--Wh7) 0.2%, var(--Wh8) 100.2%);
+}
+

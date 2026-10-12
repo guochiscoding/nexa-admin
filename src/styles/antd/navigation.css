@@ -1,0 +1,284 @@
+.navigation-menu.ant-menu-light .ant-menu-inline,
+.navigation-menu.ant-menu-light .ant-menu-sub,
+.navigation-menu.ant-menu-light.ant-menu-inline .ant-menu-sub,
+.navigation-menu.ant-menu-light .ant-menu-sub.ant-menu-inline {
+  @apply bg-container;
+  background-color: var(--bg-color-container) !important;
+}
+
+.navigation-menu.ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):hover,
+.navigation-menu.ant-menu-light .ant-menu-submenu-title:hover {
+  @apply bg-container-hover;
+}
+
+.navigation-menu.ant-menu-light .ant-menu-item-selected {
+  @apply bg-container-active text-font-black-gy1 text-title-small;
+}
+
+.navigation-menu.ant-menu-light .ant-menu-item:active {
+  @apply bg-container-active;
+}
+
+.navigation-menu.ant-menu-light > .ant-menu-item:active,
+.navigation-menu.ant-menu-light > .ant-menu-item.ant-menu-item-selected {
+  background-color: transparent;
+}
+
+.navigation-menu.ant-menu-light > .ant-menu-item-selected,
+.navigation-menu.ant-menu-light .ant-menu-submenu-selected > .ant-menu-submenu-title {
+  @apply text-font-black-gy2;
+}
+
+.navigation-menu.ant-menu-light > .ant-menu-item-selected .ant-menu-item-icon,
+.navigation-menu.ant-menu-light > .ant-menu-item-selected .anticon,
+.navigation-menu.ant-menu-light .ant-menu-submenu-selected > .ant-menu-submenu-title .ant-menu-item-icon,
+.navigation-menu.ant-menu-light .ant-menu-submenu-selected > .ant-menu-submenu-title .anticon {
+  @apply text-font-black-gy2;
+}
+
+.navigation-menu.ant-menu-light .ant-menu-item,
+.navigation-menu.ant-menu-light .ant-menu-submenu-title,
+.navigation-menu.ant-menu-light .ant-menu-item-icon,
+.navigation-menu.ant-menu-light .anticon {
+  @apply text-font-black-gy2 ;
+}
+.navigation-menu.ant-menu-light .ant-menu-sub .ant-menu-item {
+  padding-left: 40px !important;
+}
+
+.navigation-menu.ant-menu-light .ant-menu-item,
+.navigation-menu.ant-menu-light .ant-menu-submenu-title {
+  @apply w-[calc(100%-32px)] mx-4 rounded-sm;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    height 240ms ease,
+    margin 240ms ease,
+    padding 240ms ease,
+    transform 240ms ease !important;
+}
+
+.navigation-menu.ant-menu-light .ant-menu-item.ant-menu-item-selected
+ {
+  @apply text-font-black-gy1 text-title-small font-medium;
+}
+.ant-menu-light.ant-menu-root.ant-menu-inline{
+  border-inline-end: none;
+}
+.navigation-menu.ant-menu-light .ant-menu-submenu.ant-menu-submenu-selected > .ant-menu-submenu-title,
+.navigation-menu.ant-menu-light .ant-menu-submenu.ant-menu-submenu-selected > .ant-menu-submenu-title .ant-menu-title-content,
+.navigation-menu.ant-menu-light .ant-menu-submenu.ant-menu-submenu-selected > .ant-menu-submenu-title .ant-menu-submenu-arrow,
+.navigation-menu.ant-menu-light .ant-menu-submenu.ant-menu-submenu-selected > .ant-menu-submenu-title .ant-menu-item-icon,
+.navigation-menu.ant-menu-light .ant-menu-submenu.ant-menu-submenu-selected > .ant-menu-submenu-title .anticon {
+  color: var(--Font-Black-Gy1);
+}
+
+.navigation-menu.ant-menu-light:not(.ant-menu-inline-collapsed) .ant-menu-submenu-expand-icon,
+.navigation-menu.ant-menu-light:not(.ant-menu-inline-collapsed) .ant-menu-submenu-arrow {
+  position: absolute !important;
+  top: 50% !important;
+  right: 8px !important;
+  inset-inline-end: 8px !important;
+  margin-top: 0 !important;
+  transform: translateY(-50%) !important;
+  transform-origin: center center !important;
+  font-size: 16px !important;
+  width: 16px !important;
+  height: 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: inherit !important;
+}
+
+.navigation-menu.ant-menu-light:not(.ant-menu-inline-collapsed) .ant-menu-submenu-expand-icon::before,
+.navigation-menu.ant-menu-light:not(.ant-menu-inline-collapsed) .ant-menu-submenu-expand-icon::after,
+.navigation-menu.ant-menu-light:not(.ant-menu-inline-collapsed) .ant-menu-submenu-arrow::before,
+.navigation-menu.ant-menu-light:not(.ant-menu-inline-collapsed) .ant-menu-submenu-arrow::after {
+  display: none !important;
+}
+
+.navigation-menu.ant-menu-light:not(.ant-menu-inline-collapsed) .ant-menu-submenu-open > .ant-menu-submenu-title > .ant-menu-submenu-expand-icon,
+.navigation-menu.ant-menu-light:not(.ant-menu-inline-collapsed) .ant-menu-submenu-open > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
+  top: 50% !important;
+  margin-top: 0 !important;
+  transform: translateY(-50%) !important;
+}
+
+.navigation-route-icon.ant-menu-item-icon { @apply size-6 w-6 mr-2; }
+
+/* Expanded inline menu standard layout (height: 40px, uniform 4px vertical gap) */
+.navigation-menu.ant-menu-light:not(.ant-menu-inline-collapsed) .ant-menu-sub {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.navigation-menu.ant-menu-light:not(.ant-menu-inline-collapsed) .ant-menu-item,
+.navigation-menu.ant-menu-light:not(.ant-menu-inline-collapsed) .ant-menu-submenu-title {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  padding-left: 8px !important;
+  margin-top: 0 !important;
+  margin-bottom: 4px !important;
+}
+
+.navigation-menu.ant-menu-light:not(.ant-menu-inline-collapsed) .ant-menu-sub .ant-menu-item {
+  padding-left: 38px !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  margin-top: 0 !important;
+  margin-bottom: 4px !important;
+}
+
+.navigation-menu.ant-menu-light:not(.ant-menu-inline-collapsed) .ant-menu-title-content {
+  display: inline-block !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  text-align: left !important;
+  line-height: inherit !important;
+  height: auto !important;
+}
+
+/* Collapsed inline menu overrides (width: 156px, items: 124px x 61px vertical layout) */
+.navigation-menu.ant-menu-inline-collapsed {
+  width: 156px !important;
+}
+
+.navigation-menu.ant-menu-inline-collapsed > .ant-menu-item,
+.navigation-menu.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+  width: 124px !important;
+  height: 61px !important;
+  line-height: 1.2 !important;
+  margin: 4px auto !important;
+  padding: 8px 4px 6px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 4px !important;
+  position: relative !important;
+  border-radius: 6px !important;
+}
+
+.navigation-menu.ant-menu-inline-collapsed > .ant-menu-item .ant-menu-title-content {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 100% !important;
+  max-width: 112px !important;
+  margin: 0 !important;
+  text-align: center !important;
+  font-size: var(--font-size-titleSmall) !important;
+  line-height: 18px !important;
+  height: 18px !important;
+  color: var(--Font-Black-Gy2) !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.navigation-menu.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .ant-menu-title-content {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: auto !important;
+  max-width: 88px !important;
+  margin: 0 8px 0 0 !important;
+  text-align: center !important;
+  font-size: var(--font-size-titleSmall) !important;
+  line-height: 18px !important;
+  height: 18px !important;
+  color: var(--Font-Black-Gy2) !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-item-selected .ant-menu-title-content,
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-submenu-selected > .ant-menu-submenu-title .ant-menu-title-content {
+  color: var(--Font-Black-Gy1) !important;
+  font-weight: 500 !important;
+}
+
+/* .navigation-menu.ant-menu-inline-collapsed .ant-menu-item-icon,
+.navigation-menu.ant-menu-inline-collapsed .anticon,
+.navigation-menu.ant-menu-inline-collapsed .navigation-route-icon {
+  margin: 0 !important;
+  font-size: 24px !important;
+  width: 24px !important;
+  height: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+} */
+
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-submenu-expand-icon,
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-submenu-arrow,
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-submenu-title:hover .ant-menu-submenu-expand-icon,
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-submenu-title:hover .ant-menu-submenu-arrow,
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-submenu-open > .ant-menu-submenu-title > .ant-menu-submenu-expand-icon,
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-submenu-open > .ant-menu-submenu-title > .ant-menu-submenu-arrow,
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-submenu-active > .ant-menu-submenu-title > .ant-menu-submenu-expand-icon,
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-submenu-active > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: absolute !important;
+  right: 8px !important;
+  inset-inline-end: 8px !important;
+  top: 46px !important;
+  bottom: auto !important;
+  margin-top: 0 !important;
+  font-size: 16px !important;
+  width: 16px !important;
+  height: 16px !important;
+  transform: translateY(-50%) !important;
+  transform-origin: center center !important;
+  color: inherit !important;
+}
+
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-submenu-expand-icon::before,
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-submenu-expand-icon::after,
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-submenu-arrow::before,
+.navigation-menu.ant-menu-inline-collapsed .ant-menu-submenu-arrow::after {
+  display: none !important;
+}
+
+/* Flyout popup submenu for collapsed sidebar */
+.ant-menu-submenu-popup .ant-menu-sub {
+  background-color: var(--bg-color-container) !important;
+  border: 1px solid var(--component-border);
+  box-shadow: var(--td-shadow-2);
+  border-radius: 8px;
+  padding: 6px 4px;
+  min-width: 140px;
+}
+
+.ant-menu-submenu-popup .ant-menu-item {
+  color: var(--Font-Black-Gy2);
+  border-radius: 4px;
+  margin: 2px 4px;
+  width: calc(100% - 8px);
+  padding: 0 12px !important;
+  height: 36px;
+  line-height: 36px;
+}
+
+.ant-menu-submenu-popup .ant-menu-item:hover {
+  background-color: var(--bg-color-container-hover) !important;
+  color: var(--Font-Black-Gy1);
+}
+
+.ant-menu-submenu-popup .ant-menu-item-selected {
+  background-color: var(--bg-color-container-active) !important;
+  color: var(--Font-Black-Gy1) !important;
+  font-weight: 500;
+}

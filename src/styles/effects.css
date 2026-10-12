@@ -1,0 +1,73 @@
+:root {
+  --td-shadow-0: 0 3px 14px rgb(16 24 40 / 4%);
+  --td-shadow-1: 0 1px 10px rgb(0 0 0 / 5%), 0 4px 5px rgb(0 0 0 / 8%),
+    0 2px 4px -1px rgb(0 0 0 / 12%);
+  --td-shadow-2: 0 3px 14px 2px rgb(0 0 0 / 5%),
+    0 8px 10px 1px rgb(0 0 0 / 6%), 0 5px 5px -3px rgb(0 0 0 / 10%);
+  --td-shadow-3: 0 6px 30px 5px rgb(0 0 0 / 5%),
+    0 16px 24px 2px rgb(0 0 0 / 4%), 0 8px 10px -5px rgb(0 0 0 / 8%);
+  --td-shadow-4: 0 0 0 2px rgb(221 221 221);
+  --td-shadow-5: 0 -4px 16px 2px rgb(0 0 0 / 4%);
+  --td-shadow-6:  inset 10px 0 8px -8px rgba(5, 5, 5, 0.1);
+  --td-shadow-7:inset -10px 0 8px -8px rgba(5, 5, 5, 0.1);
+}
+
+:root[data-theme='dark'] {
+  --td-shadow-0: 0 3px 14px rgb(0 0 0 / 18%);
+  --td-shadow-1: 0 1px 10px rgb(0 0 0 / 20%), 0 4px 5px rgb(0 0 0 / 18%),
+    0 2px 4px -1px rgb(0 0 0 / 22%);
+  --td-shadow-2: 0 3px 14px 2px rgb(0 0 0 / 20%),
+    0 8px 10px 1px rgb(0 0 0 / 18%), 0 5px 5px -3px rgb(0 0 0 / 24%);
+  --td-shadow-3: 0 6px 30px 5px rgb(0 0 0 / 20%),
+    0 16px 24px 2px rgb(0 0 0 / 18%), 0 8px 10px -5px rgb(0 0 0 / 24%);
+  --td-shadow-4: 0 0 0 2px rgb(72 83 99 / 65%);
+  --td-shadow-5: 0 -4px 16px 2px rgb(0 0 0 / 24%);
+  --td-shadow-6: inset 10px 0 8px -8px rgb(0 0 0 / 30%);
+  --td-shadow-7: inset -10px 0 8px -8px rgb(0 0 0 / 30%);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 0;
+}
+
+::view-transition-new(root) {
+  z-index: 1;
+}
+
+.td-shadow-0 {
+  box-shadow: var(--td-shadow-0);
+}
+
+.td-shadow-1 {
+  box-shadow: var(--td-shadow-1);
+}
+
+.td-shadow-2 {
+  box-shadow: var(--td-shadow-2);
+}
+
+.td-shadow-3 {
+  box-shadow: var(--td-shadow-3);
+}
+
+.td-shadow-4 {
+  box-shadow: var(--td-shadow-4);
+}
+
+.td-shadow-5 {
+  box-shadow: var(--td-shadow-5);
+}
+
+.td-shadow-6 {
+  box-shadow: var(--td-shadow-6);
+}
+
+.td-shadow-7 {
+  box-shadow: var(--td-shadow-7);
+}

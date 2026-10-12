@@ -1,0 +1,168 @@
+/* Select */
+.common-select.ant-select {
+  height: 32px !important;
+}
+.common-select.ant-select .ant-select-selector {
+  min-height: 32px !important;
+  height: 32px !important;
+  border-radius: 3px !important;
+  border-color: var(--component-border) !important;
+  background-color: var(--bg-color-container) !important;
+  box-shadow: none !important;
+  color: var(--Font-Black-Gy2) !important;
+}
+.common-select.ant-select-single .ant-select-selector {
+  padding: 0 32px 0 8px !important;
+}
+.common-select.ant-select-multiple .ant-select-selector {
+  padding: 2px 32px 2px 8px !important;
+}
+.common-select.ant-select-single .ant-select-selection-item,
+.common-select.ant-select-single .ant-select-selection-placeholder {
+  padding-left: 0 !important;
+}
+.common-select.ant-select-single .ant-select-selection-search-input {
+  height: 30px !important;
+}
+.common-select.ant-select:not(.ant-select-disabled):not(.ant-select-focused):hover .ant-select-selector {
+  border-color: var(--brand-black-hover) !important;
+}
+.common-select.ant-select-focused:not(.ant-select-disabled) .ant-select-selector,
+.common-select.ant-select-focused:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: var(--brand-black-active) !important;
+  box-shadow: var(--td-shadow-4) !important;
+}
+.common-select.ant-select .ant-select-selection-placeholder {
+  color: var(--Font-Black-Gy3) !important;
+  font-size: var(--font-size-bodyMedium);
+}
+.common-select.ant-select .ant-select-selection-item {
+  color: var(--Font-Black-Gy1) !important;
+  margin-top: 0px !important;
+  padding-inline-start: 6px !important;
+  border-radius: 2px;
+}
+.common-select.ant-select.ant-select-single .ant-select-selection-item{
+  padding-inline-start: 0px !important;
+}
+.common-select.ant-select-multiple .ant-select-selection-item-remove,
+.common-select.ant-select-multiple .ant-select-selection-item-remove .anticon,
+.common-select.ant-select-multiple .ant-select-selection-item-remove .iconfont {
+  font-size: var(--font-size-linkMedium) !important;
+  line-height: var(--font-size-titleLarge) !important;
+} 
+.ant-select-multiple .ant-select-selection-item{
+  background-color: var(--color-secondarycontainer);
+  border-color: var(--color-component-border);
+}
+.common-select.ant-select .ant-select-arrow {
+  right: 8px !important;
+  width: 16px !important;
+  height: 16px !important;
+  margin-top: -8px !important;
+  color: var(--Font-Black-Gy1) !important;
+  font-size: var(--font-size-linkLarge) !important;
+}
+.common-select.ant-select .ant-select-arrow .anticon,
+.common-select.ant-select .ant-select-arrow .iconfont {
+  width: 16px !important;
+  height: 16px !important;
+  font-size: var(--font-size-linkLarge) !important;
+  line-height: 16px !important;
+}
+.common-select.ant-select-disabled .ant-select-selector,
+.common-select.ant-select-disabled:hover .ant-select-selector {
+  cursor: not-allowed !important;
+  border-color: var(--component-border) !important;
+  background-color: var(--bg-color-page) !important;
+  box-shadow: none !important;
+}
+.common-select.ant-select-disabled .ant-select-selection-item,
+.common-select.ant-select-disabled .ant-select-selection-item-content,
+.common-select.ant-select-disabled .ant-select-selection-placeholder,
+.common-select.ant-select-disabled .ant-select-arrow,
+.common-select.ant-select-disabled .ant-select-arrow .anticon,
+.common-select.ant-select-disabled .ant-select-arrow .iconfont {
+  color: var(--Font-Black-Gy4) !important;
+}
+
+.ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled){
+  background-color: var(--bg-color-container-active) !important;
+}
+.ant-select-dropdown,
+.common-action-dropdown .ant-dropdown-menu {
+  margin-top: 4px !important;
+  padding: 6px !important;
+  border: 0.5px solid var(--color-component-stroke) !important;
+  border-radius: 4px !important;
+  background-color: var(--bg-color-container) !important;
+}
+.ant-select-item-option,
+.common-action-dropdown .ant-dropdown-menu-item {
+  min-height: 32px !important;
+  margin-bottom: 4px !important;
+  padding: 5px 8px !important;
+  border-radius: 3px !important;
+  color: var(--Font-Black-Gy2) !important;
+}
+.ant-select-item-option:last-child,
+.common-action-dropdown .ant-dropdown-menu-item:last-child {
+  margin-bottom: 0 !important;
+}
+.common-select-dropdown .ant-select-item-option-active:not(.ant-select-item-option-disabled),
+.common-action-dropdown .ant-dropdown-menu-item:not(.ant-dropdown-menu-item-disabled):hover,
+.common-action-dropdown .ant-dropdown-menu-item-active:not(.ant-dropdown-menu-item-disabled) {
+  background-color: var(--color-color-container-hover, var(--bg-color-container-hover)) !important;
+}
+.common-action-dropdown .ant-dropdown-menu-item-selected:not(.ant-dropdown-menu-item-disabled),
+.common-action-dropdown .ant-dropdown-menu-item:not(.ant-dropdown-menu-item-disabled):active {
+  @apply !text-brand-black-active;
+}
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: var(--color-color-container-active, var(--bg-color-container-active)) !important;
+  color: var(--Font-Black-Gy1) !important;
+  font-weight: 500 !important;
+}
+.common-select-dropdown .ant-select-item-option-selected .ant-select-item-option-content,
+.common-select-dropdown .ant-select-item-option-selected .common-select-option-label {
+  color: var(--Font-Black-Gy1) !important;
+  font-weight: 500 !important;
+}
+.common-select-dropdown .ant-select-item-option-disabled,
+.common-select-dropdown .ant-select-item-option-disabled .ant-select-item-option-content,
+.common-select-dropdown .ant-select-item-option-disabled .common-select-option-label,
+.common-action-dropdown .ant-dropdown-menu-item-disabled {
+  color: var(--Font-Black-Gy4) !important;
+}
+.common-select-dropdown .ant-select-item-option-disabled .common-select-option-checkbox .ant-checkbox-inner {
+  background-color: var(--bg-color-page) !important;
+}
+.common-select-dropdown .ant-select-item-option-state {
+  display: none !important;
+}
+.common-select-dropdown .common-select-option-content {
+  display: inline-flex !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+.common-select-dropdown .common-select-option-checkbox {
+  pointer-events: none !important;
+  margin-right: 8px !important;
+}
+.common-select-dropdown .common-select-option-checkbox .ant-checkbox-inner {
+  border-radius: 3px !important;
+}
+.common-select-dropdown .common-select-option-checkbox .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--brand-black) !important;
+  border-color: var(--brand-black) !important;
+}
+.common-select-dropdown .common-select-option-label {
+  color: var(--Font-Black-Gy2) !important;
+}
+.ant-select-single .ant-select-selector .ant-select-selection-search, .ant-select-multiple .ant-select-selection-placeholder{
+  inset-inline-start: 8px !important;
+  inset-inline-end: 8px !important;
+}
+.ant-select-multiple .ant-select-selection-search{
+  margin-inline-start: 0px !important;
+}

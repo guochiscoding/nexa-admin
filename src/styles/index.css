@@ -1,0 +1,179 @@
+@import 'tailwindcss';
+@import './colors.css';
+@import './tokens.css';
+@import './typography.css';
+@import './effects.css';
+@import './utilities.css';
+@import './antd.css';
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html,
+  body,
+  #app {
+    @apply m-0 h-screen w-screen min-w-80 overflow-hidden;
+  }
+
+  body {
+    @apply antialiased;
+    background-color: var(--bg-color-page);
+    color: var(--Font-Black-Gy1);
+  }
+
+  * {
+    scrollbar-color: var(--Font-Black-Gy4) transparent;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    @apply font-[inherit];
+  }
+}
+
+@layer components {
+  .app-layout {
+    @apply h-screen w-screen overflow-hidden;
+    background-color: var(--bg-color-page);
+  }
+
+  .app-sider {
+    @apply h-full;
+  }
+
+  .app-body-layout {
+    @apply min-h-0 flex-1 overflow-hidden;
+  }
+
+  .brand {
+    @apply flex h-16 items-center gap-2.5 overflow-hidden px-5;
+    color: var(--Font-White-Gy1);
+  }
+
+  .brand.is-collapsed {
+    @apply justify-center !px-0;
+  }
+
+  .brand-mark {
+    @apply flex size-8 shrink-0 items-center justify-center rounded-[7px] font-extrabold;
+    background-color: var(--brand-blue);
+    color: var(--Font-White-Gy1);
+    font-size: var(--font-size-bodySmall);
+    line-height: 1;
+  }
+
+  .brand-name {
+    @apply whitespace-nowrap font-semibold;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .brand-top {
+    color: var(--Font-Black-Gy1);
+  }
+
+  .app-header {
+    @apply sticky top-0 z-10 flex h-16 items-center justify-between border-b px-5 backdrop-blur-md;
+    background-color: var(--bg-color-container);
+    border-color: var(--component-border);
+  }
+
+  .header-start {
+    @apply flex min-w-0 flex-1 items-center gap-5;
+  }
+
+  .top-menu {
+    @apply min-w-0 flex-1 !border-b-0 !bg-transparent;
+  }
+
+  .header-actions {
+    @apply flex items-center gap-1;
+  }
+
+  .app-content {
+    @apply relative flex min-h-0 flex-1 flex-col overflow-hidden;
+    background-color: var(--bg-color-page);
+  }
+
+  .app-breadcrumb {
+    @apply mb-[18px];
+  }
+
+  .action-label,
+  .brand-top .brand-name {
+    @apply max-sm:hidden;
+  }
+
+  .preference-list {
+    @apply grid gap-7;
+  }
+
+  .preference-section {
+    @apply grid gap-4;
+  }
+
+  .preference-label {
+    @apply font-semibold;
+    color: var(--Font-Black-Gy2);
+    font-size: var(--font-size-bodySmall);
+    line-height: 1.5;
+  }
+
+  .page-heading {
+    @apply flex items-start justify-between gap-6;
+  }
+
+  .page-eyebrow {
+    @apply mb-1.5 font-bold uppercase;
+    color: var(--Font-blue-link);
+    font-size: var(--font-size-bodySmall);
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+  }
+
+  .page-title {
+    @apply mb-2 font-bold;
+    color: var(--Font-Black-Gy1);
+    font-size: var(--font-size-headlineSmall);
+    line-height: 1.3334;
+  }
+
+  .page-description {
+    color: var(--Font-Black-Gy2);
+    font-size: var(--font-size-bodyMedium);
+    line-height: 1.5715;
+  }
+
+  .theme-value {
+    @apply inline-flex items-center gap-2;
+  }
+
+  .theme-indicator {
+    @apply size-3 rounded-full;
+    background-color: var(--brand-blue);
+  }
+
+  .global-header {
+    background-color: var(--bg-color-container);
+    border-color: var(--component-stroke);
+  }
+
+  .global-brand-mark,
+  .global-brand-name {
+    color: var(--brand-black);
+  }
+  .global-header-action,
+  .global-account {
+    border-color: var(--component-border);
+    color: var(--Font-Black-Gy1);
+  }
+
+  .global-account-avatar {
+    background-color: var(--brand-black);
+    color: var(--Font-White-Gy1);
+  }
+}

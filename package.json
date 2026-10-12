@@ -1,0 +1,57 @@
+{
+  "name": "nexa-admin",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Open-source Vue 3 admin starter for dashboard and back-office products.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "admin",
+    "dashboard",
+    "vue",
+    "vite",
+    "ant-design-vue",
+    "tailwindcss"
+  ],
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=20.19.0",
+    "pnpm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5174",
+    "build": "pnpm typecheck && vite build",
+    "check": "pnpm check:design && pnpm lint && pnpm build",
+    "lint": "eslint .",
+    "typecheck": "vue-tsc --noEmit",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "check:design": "node scripts/check-design-usage.mjs"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
+    "ant-design-vue": "^4.2.6",
+    "axios": "^1.15.0",
+    "dayjs": "^1.11.23",
+    "echarts": "^6.1.0",
+    "pinia": "^3.0.4",
+    "pinia-plugin-persistedstate": "^4.7.1",
+    "vue": "^3.5.32",
+    "vue-i18n": "^11.3.2",
+    "vue-router": "^5.0.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/vite": "^4.2.2",
+    "@types/node": "^25.0.0",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "eslint": "^10.0.0",
+    "eslint-plugin-vue": "^10.8.0",
+    "globals": "^17.0.0",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.0",
+    "typescript-eslint": "^8.58.0",
+    "vite": "^8.1.4",
+    "vue-eslint-parser": "^10.4.0",
+    "vue-tsc": "^3.2.6"
+  }
+}

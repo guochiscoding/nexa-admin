@@ -1,0 +1,74 @@
+:root {
+  --font-size-headlineSmall: 24px;
+  --font-size-titleLarge: 20px;
+  --font-size-titleMedium: 16px;
+  --font-size-titleSmall: 14px;
+  --font-size-bodyLarge: 16px;
+  --font-size-bodyMedium: 14px;
+  --font-size-bodySmall: 12px;
+  --font-size-brandMark: 30px;
+  --font-size-statisticValue: 28px;
+  --font-size-linkLarge: 16px;
+  --font-size-linkMedium: 14px;
+  --font-size-linkSmall: 12px;
+}
+
+.typo-headline-small {
+  font-size: var(--font-size-headlineSmall);
+  font-weight: 700;
+  line-height: 1.3334;
+}
+
+.typo-title-large {
+  font-size: var(--font-size-titleLarge);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.typo-title-medium {
+  font-size: var(--font-size-titleMedium);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.typo-title-small {
+  font-size: var(--font-size-titleSmall);
+  font-weight: 600;
+  line-height: 1.4286;
+}
+
+.typo-body-large {
+  font-size: var(--font-size-bodyLarge);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.typo-body-medium {
+  font-size: var(--font-size-bodyMedium);
+  font-weight: 400;
+  line-height: 1.5715;
+}
+
+.typo-body-small {
+  font-size: var(--font-size-bodySmall);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.typo-link-large {
+  font-size: var(--font-size-linkLarge);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.typo-link-medium {
+  font-size: var(--font-size-linkMedium);
+  font-weight: 500;
+  line-height: 1.5715;
+}
+
+.typo-link-small {
+  font-size: var(--font-size-linkSmall);
+  font-weight: 500;
+  line-height: 1.5;
+}

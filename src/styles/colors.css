@@ -1,0 +1,52 @@
+:root {
+  --Gray1: #f6f8fa;
+  --White1: #ffffff;
+  --Wh6: rgb(255 255 255 / 8%);
+  --Wh5: rgb(255 255 255 / 12%);
+  --Wh7: rgb(255 255 255 / 0%);
+  --Wh8: rgb(255 255 255 / 96%);
+  --Gray2: #f0f2f5;
+  --Gray3: #e8e8e8;
+  --Gray4: #dddddd;
+  --Gray5: #f3f3f3;
+  --Gray6: #bdbdbd;
+  --Gray7: #999999;
+  --Gray8: #1a1a1a;
+
+  --Font-Gy1: rgb(0 0 0 / 90%);
+  --Font-Gy2: rgb(0 0 0 / 60%);
+  --Font-Gy3: rgb(0 0 0 / 40%);
+  --Font-Gy4: rgb(0 0 0 / 26%);
+  --Font-Wh1: rgb(255 255 255 / 90%);
+  --Font-Wh1-Anti: rgb(255 255 255 / 90%);
+  --Font-Wh2: rgb(255 255 255 / 55%);
+  --Font-Wh3: rgb(255 255 255 / 35%);
+  --Font-Wh4: rgb(255 255 255 / 22%);
+
+  --Brand-bule1: #f2f3ff;
+  --Brand-bule2: #b5c7ff;
+  --Brand-bule3: #1662dd;
+  --Brand-bule4: #3d85eb;
+  --Brand-bule5: #0a52c6;
+  --Brand-black1: #f3f3f3;
+  --Brand-black2: #b3b3b3;
+  --Brand-black3: #000000;
+  --Brand-black4: #333333;
+  --Brand-black5: #1a1a1a;
+
+  --Error1: #fff0f1;
+  --Error2: #ffc4c8;
+  --Error3: #ff5c67;
+  --Error4: #eb4e59;
+  --Error5: #d9424d;
+  --Warning1: #ffebda;
+  --Warning2: #ff8119;
+  --Warning3: #ffb98c;
+  --Warning5: #ff8119;
+  --Success1: #def4e2;
+  --Success2: #35bd4c;
+  --Success3: #92dab2;
+  --Success5: #35bd4c;
+  --Purple1: #ebe4fe;
+  --Purple2: #8558fa;
+}

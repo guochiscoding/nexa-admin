@@ -1,0 +1,93 @@
+/* Keep Ant Design focus feedback neutral rather than using its default blue ring. */
+.ant-input-affix-wrapper{
+  background-color: var(--bg-color-container) !important;
+  border-color: var(--component-border) !important;
+  border-radius: 3px !important;
+  color: var(--Font-Black-Gy1) !important;
+  padding: 5px 8px !important;
+  box-sizing: border-box !important;
+  height: 32px !important;
+}
+.ant-input,
+.ant-input-affix-wrapper .ant-input {
+  background-color: var(--bg-color-container) !important;
+  color: var(--Font-Black-Gy1) !important;
+}
+
+.ant-input:hover,
+.ant-input-affix-wrapper:hover {
+  background-color: var(--bg-color-container) !important;
+}
+.ant-input-affix-wrapper .ant-input-prefix,
+.ant-input-affix-wrapper .ant-input-suffix,
+.ant-input-clear-icon,
+.ant-input-password-icon {
+  color: var(--Font-Black-Gy3) !important;
+}
+.ant-input:focus,
+.ant-input-focused,
+.ant-input-affix-wrapper-focused,
+.ant-input-affix-wrapper-focused:hover
+.ant-select-focused .ant-select-selector,
+.ant-picker-focused {
+  border-color: var(--brand-black-active) !important;
+  box-shadow: var(--td-shadow-4);
+  color: var(--Font-Black-Gy1);
+}
+.ant-select-focused.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector{
+  box-shadow: var(--td-shadow-4);
+}
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-focused,.ant-input-affix-wrapper-disabled):hover{
+  border-color: var(--brand-black-hover) !important;
+}
+
+.ant-form-item-control {
+  position: relative;
+}
+
+.ant-form-item-explain,
+.ant-form-item-extra {
+  min-height: 0 !important;
+}
+
+.ant-form-item-explain {
+  position: absolute;
+  top: 100%;
+  inset-inline-start: 0;
+  width: 100%;
+  margin-top: 2px;
+  pointer-events: none;
+}
+
+.ant-form-item-explain-error {
+  color: var(--error-color) !important;
+  font-size: var(--font-size-bodySmall) !important;
+  line-height: 18px;
+}
+
+
+/* Disabled */
+.ant-input-affix-wrapper-disabled{
+  cursor: not-allowed !important;
+  background-color: var(--bg-color-page) !important;
+  box-shadow: none !important;
+  border-color: var(--component-border) !important;
+}
+.ant-input-affix-wrapper-disabled .ant-input,
+.ant-input[disabled] {
+  color: var(--Font-Black-Gy4) !important;
+}
+.ant-input-affix-wrapper-disabled .ant-input::placeholder,
+.ant-input[disabled]::placeholder {
+  color: var(--Font-Black-Gy4) !important;
+}
+.search-input-trigger:disabled{
+  cursor: not-allowed !important;
+  color: var(--Font-Black-Gy3) !important;
+}
+/* Placeholder */
+.ant-input::placeholder{
+  color: var(--Font-Black-Gy3) !important;
+  font-size: var(--font-size-bodyMedium);
+  color: var(--Font-Black-Gy3);
+}

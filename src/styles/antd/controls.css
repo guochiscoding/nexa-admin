@@ -1,0 +1,87 @@
+/* Radio button group: only the public wrapper uses this design. */
+.app-radio-button-group.ant-radio-group {
+  @apply inline-flex max-w-full shrink-0 gap-1 overflow-x-auto rounded-[4px] border border-solid border-component-border bg-container p-0.5;
+}
+
+.app-radio-button-group.ant-radio-group > .ant-radio-button-wrapper {
+  @apply inline-flex h-7 shrink-0 items-center justify-center rounded-[2px] border-0 bg-container px-4 py-[3px] text-body-medium leading-[22px] font-normal text-font-black-gy2 shadow-none;
+}
+
+.app-radio-button-group.ant-radio-group > .ant-radio-button-wrapper::before {
+  @apply hidden;
+}
+
+.app-radio-button-group.ant-radio-group > .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-disabled):hover {
+  @apply bg-container-hover text-font-black-gy2;
+}
+
+.app-radio-button-group.ant-radio-group > .ant-radio-button-wrapper.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  @apply bg-brand-black text-font-white-gy1 shadow-none;
+}
+
+.app-radio-button-group.ant-radio-group > .ant-radio-button-wrapper.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+  @apply bg-brand-black-hover;
+}
+
+.app-radio-button-group.ant-radio-group > .ant-radio-button-wrapper.ant-radio-button-wrapper-disabled {
+  @apply cursor-not-allowed bg-container text-font-black-gy4;
+}
+
+.app-radio-button-group.ant-radio-group > .ant-radio-button-wrapper.ant-radio-button-wrapper-checked.ant-radio-button-wrapper-disabled {
+  @apply bg-brand-black-disabled text-font-black-gy4;
+}
+
+.app-radio-button-group.ant-radio-group > .ant-radio-button-wrapper:has(input:focus-visible) {
+  @apply outline-2 -outline-offset-2 outline-brand-blue;
+}
+
+/* Tabs: only the public wrapper uses this design. */
+.app-tabs.ant-tabs > .ant-tabs-nav {
+  @apply mb-0;
+}
+
+.app-tabs.ant-tabs > .ant-tabs-nav::before {
+  @apply border-b border-component-stroke;
+}
+
+.app-tabs.ant-tabs > .ant-tabs-nav .ant-tabs-tab {
+  @apply px-0 py-2 text-(length:--font-size-bodyLarge) leading-6 font-normal text-font-black-gy2;
+}
+
+.app-tabs.ant-tabs.app-tabs--14 > .ant-tabs-nav .ant-tabs-tab {
+  @apply text-(length:--font-size-bodyMedium) leading-[22px];
+}
+
+.app-tabs.ant-tabs > .ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn {
+  @apply font-medium text-brand-blue [text-shadow:none];
+}
+
+.app-tabs.ant-tabs > .ant-tabs-nav .ant-tabs-tab:not(.ant-tabs-tab-disabled):not(.ant-tabs-tab-active):hover .ant-tabs-tab-btn {
+  @apply text-brand-blue-hover;
+}
+
+.app-tabs.ant-tabs > .ant-tabs-nav .ant-tabs-tab-disabled .ant-tabs-tab-btn {
+  @apply text-font-black-gy4;
+}
+
+.app-tabs.ant-tabs > .ant-tabs-nav .ant-tabs-ink-bar {
+  @apply h-0.5 bg-brand-blue;
+}
+
+.app-tabs.ant-tabs > .ant-tabs-nav .app-tabs-label .app-tabs-icon {
+  @apply m-0;
+}
+/* tag */
+.ant-tag{
+  padding-inline: 8px;
+}
+.ant-upload-wrapper .ant-upload-drag{
+  background-color: var(--color-page);
+}
+.ant-upload-wrapper .ant-upload-drag .ant-upload{
+  padding: 8px !important;
+}
+.ant-upload-drag {
+  @apply border border-dashed !border-brand-blue;
+  border: 1px dashed 4px !important;
+}

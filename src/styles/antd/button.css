@@ -1,0 +1,26 @@
+/* Button */
+/* App Button wave: antd rejects grey-scale border/bg (R=G=B), so force wave color */
+.app-button--default .ant-wave {
+  color: var(--brand-black) !important;
+}
+
+/* .app-button-color--black.app-button--outline .ant-wave,
+.app-button-color--black .ant-wave {
+  color: var(--brand-black) !important;
+} */
+
+.app-button-color--black.app-button--primary .ant-wave {
+  color: var(--brand-black) !important;
+}
+.app-button-color--black.app-button--ghost-white .ant-wave {
+  color: var(--font-white-gy4) !important;
+}
+.app-button-color--black.app-button--ghost-gray .ant-wave {
+  color: var(--font-white-gy4) !important;
+}
+.app-button.ant-btn.app-button--text .ant-wave {
+  display: none !important;
+}
+.app-button.ant-btn.app-button--link .ant-wave {
+  display: none !important;
+}

@@ -1,0 +1,283 @@
+/* App DatePicker / RangePicker — icon + active/hover border */
+.app-picker.ant-picker {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: var(--bg-color-container);
+  border-color: var(--component-border);
+}
+
+.app-picker.ant-picker .ant-picker-input > input {
+  color: var(--Font-Black-Gy1);
+}
+
+.app-picker.ant-picker .ant-picker-input > input::placeholder {
+  color: var(--Font-Black-Gy3);
+}
+
+.app-picker.ant-picker:not(.ant-picker-disabled) .ant-picker-suffix {
+  color: var(--Font-Black-Gy1);
+}
+
+.app-picker.ant-picker .ant-picker-suffix .anticon {
+  font-size: 16px !important;
+}
+
+.app-picker.ant-picker-range:not(.ant-picker-disabled)
+  .ant-picker-separator {
+  color: var(--Font-Black-Gy3);
+}
+
+.app-picker.ant-picker-range:not(.ant-picker-disabled):has(
+    .ant-picker-input > input:not(:placeholder-shown)
+  )
+  .ant-picker-separator {
+  color: var(--Font-Black-Gy1);
+}
+
+.app-picker.ant-picker-range .ant-picker-active-bar {
+  background-color: var(--brand-black) !important;
+}
+
+.app-picker.ant-picker-disabled {
+  background-color: var(--bg-color-page);
+  border-color: var(--component-border);
+}
+
+.app-picker.ant-picker-disabled .ant-picker-input > input,
+.app-picker.ant-picker-disabled .ant-picker-input > input::placeholder {
+  color: var(--Font-Black-Gy4);
+  -webkit-text-fill-color: var(--Font-Black-Gy4);
+}
+
+.app-picker.ant-picker-disabled
+  :is(.ant-picker-suffix, .ant-picker-separator) {
+  color: var(--Font-Black-Gy4);
+}
+
+.app-picker.ant-picker:hover:not(.ant-picker-disabled),
+.app-picker.ant-picker-focused {
+  border-color: var(--brand-black-active);
+}
+
+/* Label pickers: input frame only; keep the existing popup and range behavior. */
+.label-picker > .app-picker.ant-picker.label-picker-control {
+  @apply h-[30px] min-w-0 flex-1 border-0 bg-transparent px-0 py-0 shadow-none;
+}
+
+.label-picker > .app-picker.ant-picker.label-picker-control .ant-picker-input > input {
+  @apply text-body-medium;
+}
+
+.label-picker:not(.is-disabled):has(> .app-picker.label-picker-control.ant-picker-focused) {
+  @apply border-brand-black-active shadow-td-shadow-4;
+}
+
+.label-picker:not(.is-disabled):has(> .app-picker.label-picker-control.ant-picker-status-error) {
+  @apply border-error-color;
+}
+
+.label-picker:not(.is-disabled):has(> .app-picker.label-picker-control.ant-picker-status-warning) {
+  @apply border-warning-color;
+}
+
+/* App DatePicker / RangePicker popup. */
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-panel-container {
+  background-color: var(--bg-color-container);
+  border: 0.5px solid var(--component-border);
+  box-shadow: var(--td-shadow-2);
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  :is(.ant-picker-panel, .ant-picker-header, .ant-picker-footer, .ant-picker-content th) {
+  background-color: var(--bg-color-container);
+  border-color: var(--component-stroke);
+  color: var(--Font-Black-Gy2);
+}
+
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-cell:hover .ant-picker-cell-inner,
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-time-panel-cell:not(.ant-picker-time-panel-cell-disabled):hover .ant-picker-time-panel-cell-inner {
+  background-color: var(--bg-color-container-hover) !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-header-prev-btn .anticon,
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-header-next-btn .anticon,
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-header-super-prev-btn .anticon,
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-header-super-next-btn .anticon {
+  color: var(--Font-Black-Gy3) !important;
+  /* font-size: 16px !important; */
+}
+
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-header-prev-btn .anticon,
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-header-next-btn .anticon {
+  color: var(--Font-Black-Gy3) !important;
+  font-size: 15px !important;
+}
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-header-super-prev-btn .anticon,
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-header-super-next-btn .anticon {
+  color: var(--Font-Black-Gy3) !important;
+  font-size: 15px !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  :is(
+    .ant-picker-cell-in-view .ant-picker-cell-inner,
+    .ant-picker-time-panel-cell-inner
+  ) {
+  color: var(--Font-Black-Gy1);
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  :is(
+    .ant-picker-cell:not(.ant-picker-cell-in-view) .ant-picker-cell-inner,
+    .ant-picker-cell-disabled .ant-picker-cell-inner,
+    .ant-picker-time-panel-cell-disabled .ant-picker-time-panel-cell-inner
+  ) {
+  color: var(--Font-Black-Gy4) !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-today
+  .ant-picker-cell-inner::before {
+  border-color: var(--brand-black) !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-in-range::before {
+  background-color: var(--brand-black-light) !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-in-range:not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-disabled):hover::before {
+  background-color: var(--bg-color-container-hover) !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  .ant-picker-cell-in-view:is(
+    .ant-picker-cell-selected,
+    .ant-picker-cell-range-start,
+    .ant-picker-cell-range-end
+  )
+  .ant-picker-cell-inner {
+  color: var(--Font-White-Gy1) !important;
+  background-color: var(--brand-black) !important;
+  font-weight: 600 !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  .ant-picker-time-panel-cell-selected
+  .ant-picker-time-panel-cell-inner {
+  color: var(--Font-Black-Gy1) !important;
+  background-color: var(--bg-color-container-active) !important;
+  font-weight: 600 !important;
+
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  :is(.ant-picker-today-btn, .ant-picker-now-btn) {
+  color: var(--brand-blue) !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  :is(.ant-picker-today-btn, .ant-picker-now-btn):hover {
+  color: var(--brand-blue-hover) !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  :is(.ant-picker-today-btn, .ant-picker-now-btn):active {
+  color: var(--brand-blue-active) !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-ok .ant-btn-primary,
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-ok .ant-btn-primary:not(:disabled):hover,
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-ok .ant-btn-primary:not(:disabled):active,
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-ok .ant-btn-primary:focus {
+  box-shadow: none !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-ok .ant-btn-primary {
+  color: var(--Font-White-Gy1) !important;
+  background-color: var(--brand-black) !important;
+  border-color: var(--brand-black) !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  .ant-picker-ok
+  .ant-btn-primary:not(:disabled):hover {
+  background-color: var(--brand-black-hover) !important;
+  border-color: var(--brand-black-hover) !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  .ant-picker-ok
+  .ant-btn-primary:not(:disabled):active {
+  background-color: var(--brand-black-active) !important;
+  border-color: var(--brand-black-active) !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown
+  .ant-picker-ok
+  .ant-btn-primary:disabled {
+  background-color: var(--brand-black-disabled) !important;
+  border-color: var(--brand-black-disabled) !important;
+}
+
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-ok .ant-wave {
+  display: none !important;
+}
+/* 作用于弹层内的日期/时间单元格 */
+/* :where(.css-dev-only-do-not-override-iy9s34).ant-picker-dropdown .ant-picker-time-panel-column{
+  text-align: center !important;
+  margin-top: 4px !important;
+}
+:where(.css-dev-only-do-not-override-iy9s34).ant-picker-dropdown .ant-picker-time-panel-column >li {
+  margin: 4px;
+  padding: 0;
+} */
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-time-panel-column {
+  margin-top: 4px !important;
+  text-align: center !important;
+  scrollbar-width: thin;
+  scrollbar-color: var(--Font-Black-Gy4) transparent;
+}
+
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-time-panel-column::-webkit-scrollbar {
+  width: 4px;
+}
+
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-time-panel-column::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-time-panel-column::-webkit-scrollbar-thumb {
+  background-color: var(--Font-Black-Gy4);
+  border-radius: 999px;
+}
+
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-time-panel-column > li {
+  margin: 4px;
+  padding: 0;
+}
+.ant-picker-dropdown.app-picker-dropdown .ant-picker-time-panel-cell-inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-inline: 0 !important;
+  text-align: center !important;
+}
+/* 起止日全圆角 */
+.ant-picker-dropdown.app-picker-dropdown
+  .ant-picker-cell-in-view:is(
+    .ant-picker-cell-range-start,
+    .ant-picker-cell-range-end
+  )
+  .ant-picker-cell-inner {
+  border-radius: 4px !important;
+}
+/* 去掉起止日与中间区间之间的衔接条 */
+.ant-picker-dropdown.app-picker-dropdown
+  .ant-picker-cell-in-view:is(
+    .ant-picker-cell-range-start,
+    .ant-picker-cell-range-end
+  )::before {
+  background: var(--brand-black-light) !important;
+}
